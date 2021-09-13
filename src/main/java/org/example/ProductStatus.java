@@ -1,7 +1,7 @@
 package org.example;
 
 public enum ProductStatus {
-    outOfStock,
-    inStock,
-    runningLow
+    in_stock,
+    out_of_stock,
+    running_low;
 }

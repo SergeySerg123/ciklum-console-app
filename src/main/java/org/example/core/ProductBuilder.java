@@ -6,6 +6,7 @@ public class ProductBuilder {
 
     private String productName;
     private double productPrice;
+    private String productStatus;
 
     public void WithProductName(String name) {
         productName = name;
@@ -15,7 +16,11 @@ public class ProductBuilder {
         productPrice = price;
     }
 
+    public void WithProductStatus(String status) {
+        productStatus = status;
+    }
+
     public Product Build() {
-        return new Product(productName, productPrice);
+        return new Product(productName, productPrice, productStatus);
     }
 }

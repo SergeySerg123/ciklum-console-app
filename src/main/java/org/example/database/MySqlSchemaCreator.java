@@ -15,12 +15,15 @@ public class MySqlSchemaCreator implements SchemaCreator {
             Statement statement = connection.createStatement();
 
             String sqlCommand = """
-                    CREATE TABLE developers (
-                      id   INT          NOT NULL PRIMARY KEY,
-                      name VARCHAR(100) NOT NULL
-                      salary VARCHAR(100) NOT NULL
+                    CREATE TABLE IF NOT EXISTS products (
+                      id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+                      name VARCHAR(100) NOT NULL,
+                      price INT NOT NULL,
+                      status ENUM('out_of_stock', 'in_stock', 'running_low'),
+                      created_at DATETIME DEFAULT CURRENT_TIMESTAMP
                     );""";
 
+            statement.execute(sqlCommand);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }

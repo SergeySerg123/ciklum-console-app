@@ -1,21 +1,18 @@
 package org.example.models;
 
-import org.example.ProductStatus;
-
-import java.util.Random;
-
 public class Product {
-    private int id = new Random().nextInt(1000000000);
+    private int id;
 
     private String name;
 
     private double price;
 
-    private ProductStatus productStatus = ProductStatus.inStock;
+    private String status;
 
-    public Product(String name, double price) {
+    public Product(String name, double price, String status) {
         this.name = name;
         this.price = price;
+        this.status = status;
     }
 
     public int getId() {
@@ -26,23 +23,11 @@ public class Product {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public double getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public ProductStatus getProductStatus() {
-        return productStatus;
-    }
-
-    public void setProductStatus(ProductStatus productStatus) {
-        this.productStatus = productStatus;
+    public String getProductStatus() {
+        return status;
     }
 }

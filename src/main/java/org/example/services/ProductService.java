@@ -28,9 +28,9 @@ public class ProductService {
             int productId = product.getId();
             String productName = product.getName();
             double productPrice = product.getPrice();
-            ProductStatus productStatus = product.getProductStatus();
+            String productStatus = product.getProductStatus();
 
-            productStrings[i] = "   " + productId + "      " + productName + "           " + productPrice + "           " + productStatus.name();
+            productStrings[i] = "   " + productId + "      " + productName + "           " + productPrice + "           " + productStatus;
         }
 
         return productStrings;
