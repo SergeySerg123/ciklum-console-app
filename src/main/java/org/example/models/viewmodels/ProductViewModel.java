@@ -1,9 +1,9 @@
-package org.example.models;
+package org.example.models.viewmodels;
 
 /**
- * Represents product before saving to database
+ * Represents product after retrieving from database
  */
-public class Product {
+public class ProductViewModel {
     private int id;
 
     private String name;
@@ -12,7 +12,8 @@ public class Product {
 
     private String status;
 
-    public Product(String name, int price, String status) {
+    public ProductViewModel(int id, String name, int price, String status) {
+        this.id = id;
         this.name = name;
         this.price = price;
         this.status = status;
@@ -30,7 +31,7 @@ public class Product {
         return price;
     }
 
-    public String getProductStatus() {
+    public String getStatus() {
         return status;
     }
 }
