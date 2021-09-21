@@ -5,6 +5,7 @@
 - JDBC
 - MySQL
 - JUnit 5
+- Guice 5
 - Maven
 
 # How to get start
