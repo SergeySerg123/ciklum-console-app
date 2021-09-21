@@ -14,7 +14,8 @@
 - updates credentials and database name in the `local.properties`
 
 ### Running application
-- git clone `https://github.com/SergeySerg123/ciklum-console-app`
+- `git clone https://github.com/SergeySerg123/ciklum-console-app`
+- `cd ciklum-console-app`
 - for running application with unit tests, please use `mvn verify` command
 - for running only unit tests, please use `mvn test` command
 - for running application without unit tests, please use `mvn exec:java` command
