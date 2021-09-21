@@ -8,7 +8,7 @@
 - Guice 5
 - Maven
 
-# How to get start
+# How to get started
 
 ### Preparation for database
 - open MySQL workbench (or analog) and create a new database (schema)
