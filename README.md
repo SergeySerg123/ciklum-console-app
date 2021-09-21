@@ -10,14 +10,17 @@
 
 # How to get start
 
-### Prepare database
+### Preparation for database
 - open MySQL workbench (or analog) and create a new database (schema)
 - updates credentials and database name in the `local.properties`
 
-### Running application
+### Preparation for application
 - `git clone https://github.com/SergeySerg123/ciklum-console-app`
 - `cd ciklum-console-app`
 - `mvn compile`
+
+### Running application
+
 - for running application with unit tests, please use `mvn verify` command
 - for running only unit tests, please use `mvn test` command
 - for running application without unit tests, please use `mvn exec:java` command
